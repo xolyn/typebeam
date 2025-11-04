@@ -1,4 +1,5 @@
 # typebeam
+A serverless lightweight js plugin that can change the global font-family via js injection.
 
 ## Usage
 Simply add code block:
