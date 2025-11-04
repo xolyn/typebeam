@@ -29,7 +29,7 @@ All parameters are optional except for `url`.
 | `style`  | `normal`       | Font style (`normal`, `italic`, etc.)                                          |
 
 ## 💡 Usage
-
+> Due to CORS issues, don't use `http://raw.githubusercontent.com/...` as your CDN provider, this won't work.
 ### 1. Via URL parameters
 
 A quick one-liner to inject a remote font:
@@ -54,12 +54,12 @@ Keep the script URL stable for better CDN caching:
 
 ```html
 <script
-  src="https://raw.githubusercontent.com/xolyn/typebeam/refs/heads/main/typebeam.js"
-  data-url="https://cdn.example.com/MyFont.woff2"
-  data-family="MyFont"
-  data-scope="body"           <!-- optional, default :root -->
-  data-weight="400"           <!-- optional -->
-  data-style="normal"         <!-- optional -->
+  src="https://cdn.example.com/typebeam.js"
+  tb-url="https://cdn.example.com/MyFont.woff2"
+  tb-family="MyFont"
+  tb-scope="body"           <!-- optional, default :root -->
+  tb-weight="400"           <!-- optional -->
+  tb-style="normal"         <!-- optional -->
 ></script>
 ```
 
@@ -68,11 +68,11 @@ OR
 ```html
 <script
   src="https://raw.githubusercontent.com/xolyn/typebeam/refs/heads/main/typebeam.min.js"
-  data-url="https://cdn.example.com/MyFont.woff2"
-  data-family="MyFont"
-  data-scope="body"           <!-- optional, default :root -->
-  data-weight="400"           <!-- optional -->
-  data-style="normal"         <!-- optional -->
+  tb-url="https://cdn.example.com/MyFont.woff2"
+  tb-family="MyFont"
+  tb-scope="body"           <!-- optional, default :root -->
+  tb-weight="400"           <!-- optional -->
+  tb-style="normal"         <!-- optional -->
 ></script>
 ```
 
