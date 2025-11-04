@@ -35,7 +35,13 @@ All parameters are optional except for `url`.
 A quick one-liner to inject a remote font:
 
 ```html
-<script src="https://raw.githubusercontent.com/xolyn/typebeam/refs/heads/main/typebeam.js?url=https://cdn.example.com/MyFont.woff2&family=MyFont"></script>
+<script src="https:/cdn.example.com/typebeam.js?url=https://cdn.example.com/MyFont.woff2&family=MyFont"></script>
+```
+
+OR
+
+```html
+<script src="https:/cdn.example.com/typebeam.min.js?url=https://cdn.example.com/MyFont.woff2&family=MyFont"></script>
 ```
 
 ✅ **Example:**
@@ -57,6 +63,18 @@ Keep the script URL stable for better CDN caching:
 ></script>
 ```
 
+OR
+
+```html
+<script
+  src="https://raw.githubusercontent.com/xolyn/typebeam/refs/heads/main/typebeam.min.js"
+  data-url="https://cdn.example.com/MyFont.woff2"
+  data-family="MyFont"
+  data-scope="body"           <!-- optional, default :root -->
+  data-weight="400"           <!-- optional -->
+  data-style="normal"         <!-- optional -->
+></script>
+```
 
 ## 🧩 Unloading the font
 
