@@ -86,9 +86,11 @@ TypeBeam.unload();
 ```
 
 
+<!--
 ## Speed up
 If you are in China mainland, use:
 `https://fastly.jsdelivr.net/gh/xolyn/typebeam/refs/heads/main/typebeam.js` instead of `https://raw.githubusercontent.com/xolyn/typebeam/refs/heads/main/typebeam.js`
+-->
 
 
 ## 📦 License
