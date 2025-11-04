@@ -29,6 +29,7 @@ All parameters are optional except for `url`.
 | `style`  | `normal`       | Font style (`normal`, `italic`, etc.)                                          |
 
 ## 💡 Usage
+> [!NOTE]
 > Due to CORS issues, don't use `http://raw.githubusercontent.com/...` as your CDN provider, this won't work.
 ### 1. Via URL parameters
 
